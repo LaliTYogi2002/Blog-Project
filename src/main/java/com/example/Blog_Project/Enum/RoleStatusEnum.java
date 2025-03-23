@@ -1,4 +1,7 @@
 package com.example.Blog_Project.Enum;
 
-public enum RoleStatus {
+public enum RoleStatusEnum {
+    ACTIVE,
+    INACTIVE,
+
 }
