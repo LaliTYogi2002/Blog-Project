@@ -48,6 +48,9 @@ local.properties
 # CDT-specific
 .cproject
 .env
+/# Ignore the main config
+src/main/resources/application.properties
+
 # PDT-specific
 .buildpath
 
