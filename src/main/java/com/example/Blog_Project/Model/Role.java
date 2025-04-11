@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Entity
@@ -28,6 +29,9 @@ public class Role {
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false)
     private RoleStatusEnum status;
+
+    @OneToMany(mappedBy = "role")
+    private List<User> users;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     @CreationTimestamp
