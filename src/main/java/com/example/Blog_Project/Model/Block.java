@@ -12,7 +12,7 @@ import java.util.Objects;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "blocked")
+@Table(name = "blocked_users")
 public class Block {
 
     @Id

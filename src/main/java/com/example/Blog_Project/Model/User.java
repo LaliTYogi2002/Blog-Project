@@ -39,7 +39,7 @@ public class User {
     @Column(name = "status", nullable = false)
     private UserStatusEnum status;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "role_id", referencedColumnName = "id")
     private Role role;
 
